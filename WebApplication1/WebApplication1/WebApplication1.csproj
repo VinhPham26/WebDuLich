@@ -342,6 +342,7 @@
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Web\About.cshtml" />
+    <Content Include="Views\Web\GopY.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

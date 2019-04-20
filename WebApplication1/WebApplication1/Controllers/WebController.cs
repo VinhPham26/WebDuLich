@@ -36,5 +36,10 @@ namespace WebApplication1.Controllers
 
             return View(gopY);
         }
+
+        public ActionResult ListTour()
+        {
+            return View();
+        }
     }
 }

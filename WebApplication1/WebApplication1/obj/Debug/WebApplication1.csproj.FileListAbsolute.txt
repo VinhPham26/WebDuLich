@@ -73,11 +73,7 @@ C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\obj\Debug\We
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
-C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\DAL.dll
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\EntityFramework.dll
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
-C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\DAL.pdb
-C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\DAL.dll.config
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\EntityFramework.xml
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml

@@ -39,7 +39,7 @@ namespace WebApplication1.Controllers
 
         public ActionResult ListTour()
         {
-            return View();
+            return View(db.Tours.ToList());
         }
     }
 }

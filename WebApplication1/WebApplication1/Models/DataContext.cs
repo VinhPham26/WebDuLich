@@ -13,5 +13,6 @@ namespace WebApplication1.Models
 
         }
         public DbSet<GopY> GopYs { get; set; }
+        public DbSet<Tour> Tours { get; set; }
     }
 }

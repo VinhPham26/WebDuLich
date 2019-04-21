@@ -133,6 +133,7 @@
     </Compile>
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\GopY.cs" />
+    <Compile Include="Models\Tour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

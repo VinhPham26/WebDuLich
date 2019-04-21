@@ -77,4 +77,3 @@ C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\EntityFr
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\EntityFramework.xml
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
-C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache

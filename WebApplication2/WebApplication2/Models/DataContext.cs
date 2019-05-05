@@ -8,7 +8,7 @@ namespace WebApplication2.Models
 {
     public class DataContext : DbContext
     {
-        public DataContext() : base("name=Test")
+        public DataContext() : base("name=Web")
         {
 
         }

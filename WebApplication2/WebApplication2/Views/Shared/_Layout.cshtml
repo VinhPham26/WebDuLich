@@ -62,10 +62,10 @@
                                 @Html.ActionLink("List Tours", "ListTour", "Home")
                                 @Html.ActionLink("About", "About", "Home")
                                 @Html.ActionLink("Góp ý", "GopY", "Home")
-                                @*<li><a href="blog.html">Blog</a></li>
-
-                                    <li><a href="contact.html">Contact</a></li>*@
-                                <!-- <li><a href="booking.html">Book Online</a></li> -->
+                                 @if (User.IsInRole("Admin"))
+                                    {
+                                         @Html.ActionLink("DK tài khoản", "DKTK", "Account")
+                                    }
                             </ul>
                         </nav>
                     </div>

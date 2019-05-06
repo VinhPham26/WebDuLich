@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -162,15 +163,7 @@ namespace WebApplication2.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            if (User.Identity.IsAuthenticated)
-            {
-                if (isAdminUser())
-                {
-                    ViewBag.tk = new SelectList(context.Roles).ToList();
-                }
-            }
-            else
-                ViewBag.tk = new SelectList(context.Roles.Where(u => u.Name.Contains("Khach"))
+            ViewBag.tk = new SelectList(context.Roles.Where(u => u.Name.Contains("Khach"))
                                             .ToList(), "Name", "Name");
             return View();
         }
@@ -201,6 +194,12 @@ namespace WebApplication2.Controllers
                 }
                 ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("Admin")).ToList());
                 AddErrors(result);
+            }
+            if (!ModelState.IsValid)
+            {
+                ViewBag.tk = new SelectList(context.Roles.Where(u => u.Name.Contains("Khach"))
+                                            .ToList(), "Name", "Name");
+                return View();
             }
 
             // If we got this far, something failed, redisplay form   

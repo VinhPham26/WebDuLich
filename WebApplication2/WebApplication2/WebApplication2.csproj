@@ -408,6 +408,7 @@
     <Content Include="Views\Home\GopY.cshtml" />
     <Content Include="Views\Home\CTTour.cshtml" />
     <Content Include="Views\Home\ListTour.cshtml" />
+    <Content Include="Views\Account\DKTK.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

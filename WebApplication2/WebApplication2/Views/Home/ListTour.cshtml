@@ -20,7 +20,19 @@
 <div class="site-section">
 
     <div class="container">
-
+        @using (Html.BeginForm())
+        {
+        <p>
+            Tìm kiếm theo tên tour: @Html.TextBox("ten") <input type="submit" value="Tìm kiếm" id="nutsubmit"/>
+            <input type="reset" value="Show tất cả tour" id="nutreset"/>
+            <script>
+                $("#nutreset").click(function () {
+                    $("#ten").val("");
+                    //$("#nutsubmit").trigger('click');
+                }
+            </script>
+        </p>
+        }
         <div class="row">
             @foreach (var item in Model)
             {

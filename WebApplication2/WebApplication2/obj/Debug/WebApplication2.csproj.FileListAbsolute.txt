@@ -311,3 +311,4 @@ E:\GitHub\WebDuLich\WebApplication2\WebApplication2\obj\Debug\WebApplication2.cs
 E:\GitHub\WebDuLich\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 E:\GitHub\WebDuLich\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
 E:\GitHub\WebDuLich\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojAssemblyReference.cache
+C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojAssemblyReference.cache

@@ -61,9 +61,15 @@ namespace WebApplication2.Controllers
         }
 
         [Authorize]
-        public ActionResult ListTour()
+        public ActionResult ListTour(string ten)
         {
-            return View(db.Tours.ToList());
+            var tim = from a in db.Tours select a;
+            if (!String.IsNullOrEmpty(ten))
+            {
+                tim = tim.Where(s => s.tenTour.Contains(ten)); 
+            }
+            return View(tim);
+            //return View(db.Tours.ToList());
         }
 
         public ActionResult CTTour(int? id)

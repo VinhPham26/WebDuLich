@@ -49,20 +49,16 @@
                                 <li class="active">
                                     @Html.ActionLink("Home", "Index", "Home") &nbsp &nbsp
                                 </li>
-                                @*<li class="has-children">
-                                        <a href="destination.html">Destinations</a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">Japan</a></li>
-                                            <li><a href="#">Europe</a></li>
-                                            <li><a href="#">China</a></li>
-                                            <li><a href="#">France</a></li>
-                                        </ul>
-                                    </li>*@
 
                                 @Html.ActionLink("List Tours", "ListTour", "Home") &nbsp &nbsp
                                 @Html.ActionLink("About", "About", "Home") &nbsp &nbsp
-                                @Html.ActionLink("Góp ý", "GopY", "Home")
-                                
+                                @Html.ActionLink("Góp ý", "GopY", "Home") &nbsp &nbsp
+                                @if (User.IsInRole("Admin"))
+                                {
+                                <a>@Html.ActionLink("DK tài khoản", "DKTK", "Account") &nbsp </a> 
+                                <a>@Html.ActionLink("Quản lí", "QuanLi", "Home")</a>
+                                }
+
                                 <!-- <li><a href="booking.html">Book Online</a></li> -->
                             </ul>
                         </nav>

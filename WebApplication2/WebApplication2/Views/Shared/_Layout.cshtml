@@ -49,23 +49,15 @@
                                 <li class="active">
                                     @Html.ActionLink("Home", "Index", "Home")
                                 </li>
-                                @*<li class="has-children">
-                                        <a href="destination.html">Destinations</a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">Japan</a></li>
-                                            <li><a href="#">Europe</a></li>
-                                            <li><a href="#">China</a></li>
-                                            <li><a href="#">France</a></li>
-                                        </ul>
-                                    </li>*@
 
                                 @Html.ActionLink("List Tours", "ListTour", "Home")
                                 @Html.ActionLink("About", "About", "Home")
                                 @Html.ActionLink("Góp ý", "GopY", "Home")
-                                 @if (User.IsInRole("Admin"))
-                                    {
-                                         @Html.ActionLink("DK tài khoản", "DKTK", "Account")
-                                    }
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    @Html.ActionLink("DK tài khoản", "DKTK", "Account")
+                                    @Html.ActionLink("Quản lí", "QuanLi", "Home")
+                                }
                             </ul>
                         </nav>
                     </div>

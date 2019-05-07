@@ -14,5 +14,6 @@ namespace WebApplication2.Models
         }
         public DbSet<GopY> GopYs { get; set; }
         public DbSet<Tour> Tours { get; set; }
+        public DbSet<HoaDon> HoaDons { get; set; }
     }
 }

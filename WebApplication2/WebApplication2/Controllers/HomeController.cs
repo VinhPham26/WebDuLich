@@ -79,6 +79,21 @@ namespace WebApplication2.Controllers
             return View(tour);
         }
 
+        public ActionResult HoaDon()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult HoaDon([Bind(Include = "id,soKhach,giaTien")] HoaDon hoaDon)
+        {
+            if (ModelState.IsValid)
+            {
+                db.HoaDons.Add(hoaDon);
+                db.SaveChanges();
+            }
 
+            return View(hoaDon);
+        }
     }
 }

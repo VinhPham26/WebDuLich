@@ -41,13 +41,13 @@
                 <div class="row align-items-center">
 
                     <div class="col-6 col-xl-2">
-                        <h1 class="mb-0">@Html.ActionLink("Travelers", "Index", "Home", new { @class = "text-black h2 mb-0" })</h1>
+                        <h1 class="mb-0">@Html.ActionLink("Travelers", "Index", "Home", new { @class = "text-black h2 mb-0" },null)</h1>
                     </div>
                     <div class="col-10 col-md-8 d-none d-xl-block">
                         <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
                             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                                 <li class="active">
-                                    @Html.ActionLink("Home", "Index", "Home") &nbsp &nbsp
+                                    @Html.ActionLink("Home", "Index", "Home", null) &nbsp &nbsp
                                 </li>
 
                                 @Html.ActionLink("List Tours", "ListTour", "Home") &nbsp &nbsp
@@ -55,10 +55,13 @@
                                 @Html.ActionLink("Góp ý", "GopY", "Home") &nbsp &nbsp
                                 @if (User.IsInRole("Admin"))
                                 {
-                                <a>@Html.ActionLink("DK tài khoản", "DKTK", "Account") &nbsp </a> 
-                                <a>@Html.ActionLink("Quản lí", "QuanLi", "Home")</a>
+                                    <a>@Html.ActionLink("DK tài khoản", "DKTK", "Account") &nbsp </a>
+                                    <a>@Html.ActionLink("Quản lí", "QuanLi", "Home")</a>
                                 }
-
+                                @if (User.IsInRole("NV"))
+                                {
+                                    <a>@Html.ActionLink("Tạo tour", "Create", "Tours") &nbsp </a>
+                                }
                                 <!-- <li><a href="booking.html">Book Online</a></li> -->
                             </ul>
                         </nav>

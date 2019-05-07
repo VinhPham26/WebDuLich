@@ -96,35 +96,9 @@ namespace WebApplication2.Controllers
 
         //    return View(hoaDon);
         //}
-
-        public ActionResult EditTour(int? id)
+        public ActionResult QuanLi()
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Tour tour = db.Tours.Find(id);
-            if (tour == null)
-            {
-                return HttpNotFound();
-            }
-            return View(tour);
-        }
-
-        // POST: hocsinhs/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult EditTour([Bind(Include = "Id,tenTour,thoiGian,phuongTien,gia,ngayDi,chiTiet")] Tour tour)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(tour).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(tour);
+            return View();
         }
     }
 }

@@ -409,6 +409,7 @@
     <Content Include="Views\Home\CTTour.cshtml" />
     <Content Include="Views\Home\ListTour.cshtml" />
     <Content Include="Views\Account\DKTK.cshtml" />
+    <Content Include="Views\Home\EditTour.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

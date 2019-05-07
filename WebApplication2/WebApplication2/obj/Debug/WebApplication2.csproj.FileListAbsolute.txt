@@ -203,7 +203,6 @@ C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication2\WebApplication2\bin\Microsof
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication2\WebApplication2\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication2\WebApplication2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojAssemblyReference.cache
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CoreCompileInputs.cache
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CopyComplete
 C:\Users\Vinh\Desktop\Web\WebDuLich\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll

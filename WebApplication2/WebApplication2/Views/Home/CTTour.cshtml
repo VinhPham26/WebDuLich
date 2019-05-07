@@ -66,10 +66,10 @@
 						</li>
 				</ul>
                     <p>
-                        @Html.ActionLink("Đặt tour", "DatTour", "Home", new { @class = "btn btn-primary py-1 px-3 text-white" }) &nbsp &nbsp
+                        @Html.ActionLink("Đặt tour", "DatTour", "Home", new { id = Model.Id, @class = "btn btn-primary py-1 px-3 text-white" }) &nbsp &nbsp
                         @if (User.IsInRole("Admin"))
                         {
-                            @Html.ActionLink("Sửa", "Sửa tour", "Home", new { @class = "btn btn-primary py-1 px-3 text-white" })
+                            @Html.ActionLink("Sửa", "EditTour", "Home", new { id = Model.Id })
                         }
                     </p> 
 		</div>

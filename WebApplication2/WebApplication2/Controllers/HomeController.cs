@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -79,21 +80,51 @@ namespace WebApplication2.Controllers
             return View(tour);
         }
 
-        public ActionResult HoaDon()
+        //public ActionResult HoaDon()
+        //{
+        //    return View();
+        //}
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult HoaDon([Bind(Include = "id,soKhach,giaTien")] HoaDon hoaDon)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.HoaDons.Add(hoaDon);
+        //        db.SaveChanges();
+        //    }
+
+        //    return View(hoaDon);
+        //}
+
+        public ActionResult EditTour(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Tour tour = db.Tours.Find(id);
+            if (tour == null)
+            {
+                return HttpNotFound();
+            }
+            return View(tour);
         }
+
+        // POST: hocsinhs/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult HoaDon([Bind(Include = "id,soKhach,giaTien")] HoaDon hoaDon)
+        public ActionResult EditTour([Bind(Include = "Id,tenTour,thoiGian,phuongTien,gia,ngayDi,chiTiet")] Tour tour)
         {
             if (ModelState.IsValid)
             {
-                db.HoaDons.Add(hoaDon);
+                db.Entry(tour).State = EntityState.Modified;
                 db.SaveChanges();
+                return RedirectToAction("Index");
             }
-
-            return View(hoaDon);
+            return View(tour);
         }
     }
 }

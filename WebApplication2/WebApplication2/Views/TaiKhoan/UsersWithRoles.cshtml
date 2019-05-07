@@ -1,9 +1,9 @@
-﻿
+﻿@model IEnumerable<WebApplication2.Models.UserWithRole>
+
 @{
     ViewBag.Title = "Users With Roles";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model IEnumerable<WebApplication2.Models.UserWithRole>
 
 <div class="panel panel-primary">
     <div class="panel-heading">
@@ -23,12 +23,13 @@
             </thead>
             @foreach (var user in Model)
             {
-                <tr>
-                    <td>@user.Username</td>
-                    <td>@user.Email</td>
-                    <td>@user.Role</td>
-
-                </tr>
+            <tr>
+                <td>@user.Username</td>
+                <td>@user.Email</td>
+                <td>@user.Role</td>
+                <td>@Html.ActionLink("Edit", "Edit", new { id = user.UserId })</td>
+                <td>@Html.ActionLink("Delete", "Delete", new { id = user.UserId })</td>
+            </tr>
             }
         </table>
     </div>
@@ -41,7 +42,6 @@
 
 @section scripts{
     <script>
-
         $(function () {
             $('#UsersWithRoles').DataTable({
                 "paging": true,
